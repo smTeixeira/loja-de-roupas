@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section {
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: normal;
+}
+
+.container {
+    padding: 16px 0;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    max-width: 2000px;
+}
+
+.container img {
+    height: 100px;
+    max-height: 320px;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sobre-a-loja,
+.produtos {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.produtos {
+    padding: 40px;
+}
+
+.sobre-a-loja h2 {
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+
+header .container,
+.sobre-a-loja {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre-a-loja img {
+    margin-top: 40px;
+    margin-right: 40px;
+    height: 300px;
+}
+
+#produtos h2 {
+    margin-left: auto;
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+    margin-top: 50px;
+}
+
+.produto {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.produto img {
+    height: 300px;
+}
+
+.produtos li {
+    list-style: none;
+}
+
+article img {
+    width: 100%;
+    height: 100%;
+}
+
+article {
+    justify-content: flex-start;
+}
+
+.price {
+    padding: 16px;
+}
+
+button {
+    padding: 10px;
+    display: block;
+    width: 90%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+}
+
+@media screen and (max-width: 767px) {
+
+    header nav li {
+        display: inline;
+        margin-left: 16px;
+        font-size: 18px;
+    }
+
+
+    .sobre-a-loja {
+        display: block;
+    }
+
+    .sobre-a-loja,
+    .produtos {
+        max-width: 90%;
+    }
+
+    header .container,
+    .sobre-a-loja {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sobre-a-loja img {
+        margin-top: 40px;
+        margin-right: 40px;
+        height: 250px;
+    }
+
+    #produtos h2 {
+        margin-left: 20px;
+        border-bottom: 1px solid black;
+        margin-top: 50px
+    }
+
+    .produto {
+        display: block;
+        margin-bottom: 15px;
+        padding: 30px;
+    }
+
+    button {
+        padding: 10px;
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 6px;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    header nav li {
+        display: inline;
+        margin-left: 16px;
+        font-size: 18px;
+    }
+
+
+    .sobre-a-loja {
+        display: block;
+    }
+
+    .sobre-a-loja,
+    .produtos {
+        max-width: 90%;
+    }
+
+    header .container,
+    .sobre-a-loja {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sobre-a-loja img {
+        margin-top: 40px;
+        margin-right: 40px;
+        height: 100%;
+        width: 100%;
+    }
+
+    #produtos h2 {
+        margin-left: 20px;
+        border-bottom: 1px solid black;
+        margin-top: 50px
+    }
+
+    .produto {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        justify-content: space-between;
+        margin-bottom: 15px;
+        padding: 30px;
+    }
+
+    button {
+        padding: 10px;
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 6px;
+        margin-top: 16px;
+    }
+}
